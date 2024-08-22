@@ -1,0 +1,6 @@
+docker run --rm --name postgres -e \
+POSTGRES_PASSWORD=PNg1JtztFVO7qYV7DgiMoflLyeLur1bE -e \
+POSTGRES_USER=filip_povidernyi -e \
+POSTGRES_DB=db_contacts_3jli -dp 5432:5432 -v \
+$HOME/docker/volumes/postgres:/var/lib/postgresql/data \
+postgres
